@@ -6,8 +6,6 @@
  * @author Tim Malone <tdmalone@gmail.com>
  */
 
-/* global jest */
-
 'use strict';
 
 const helpers = require( '../src/helpers' );
@@ -147,6 +145,7 @@ describe( 'extractPlusMinusEventData', () => {
                 'matches ' + messageText + ' as ' + item.expected + ' and ' + operation.expected
               );
 
+        // eslint-disable-next-line jest/valid-title
         it( testName, () => {
           const result = helpers.extractPlusMinusEventData( messageText );
           expect( result ).toEqual({

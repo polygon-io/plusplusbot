@@ -5,8 +5,6 @@
  * @author Tim Malone <tdmalone@gmail.com>
  */
 
-/* global jest */
-
 'use strict';
 
 const objectAssignDeep = require( 'object-assign-deep' ),

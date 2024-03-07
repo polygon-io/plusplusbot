@@ -12,4 +12,5 @@ require( 'jest-chain' );
 
 // Adds a bunch of additional matchers to Jest.
 // @see https://github.com/jest-community/jest-extended#api
-require( 'jest-extended' );
+const matchers = require( 'jest-extended' );
+expect.extend( matchers );

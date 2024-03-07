@@ -6,8 +6,6 @@
  * @author Tim Malone <tdmalone@gmail.com>
  */
 
-/* global jest */
-
 'use strict';
 
 const leaderboard = require( '../src/leaderboard' ),
@@ -21,6 +19,8 @@ describe( 'getLeaderboardUrl', () => {
     headers: { host: 'test.local' },
     body: { event: { text: '<@U00000000> test' } }
   };
+
+  console.log(request);
 
   const leaderboardUrl = leaderboard.getLeaderboardUrl( request ),
         parsedUrl = new URL( leaderboardUrl ),

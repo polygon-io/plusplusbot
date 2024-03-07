@@ -8,7 +8,7 @@
 
 const config = {
   collectCoverage: true,
-  setupTestFrameworkScriptFile: './jest.plugins',
+  setupFilesAfterEnv: [ './jest.plugins' ],
   testEnvironment: 'node',
 
   testMatch: [
