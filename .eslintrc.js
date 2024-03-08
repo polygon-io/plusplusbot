@@ -10,6 +10,7 @@
 module.exports = {
   extends: [ 'tdmalone' ], // @see https://github.com/tdmalone/eslint-config-tdmalone
   rules: {
-    'max-statements': [ 'error', { max: 20 } ]
+    'max-statements': [ 'error', { max: 20 } ],
+    'jest/no-done-callback': 'off'
   }
 };

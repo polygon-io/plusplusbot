@@ -6,7 +6,7 @@
  * @author Tim Malone <tdmalone@gmail.com>
  */
 
-/* global jest */
+/* eslint "jest/no-conditional-expect": "off" */
 
 'use strict';
 

@@ -6,8 +6,6 @@
  * @author Tim Malone <tdmalone@gmail.com>
  */
 
-/* global jest */
-
 'use strict';
 
 /****************************************************************
@@ -52,8 +50,9 @@ beforeAll( async() => {
 });
 
 // Close the Express server when we end.
-afterAll( () => {
+afterAll( async() => {
   listener.close();
+  await postgres.end();
 });
 
 /****************************************************************
