@@ -36,7 +36,7 @@ if ( process.env.SKIP_E2E_TESTS ) {
   config.testPathIgnorePatterns.push( 'e2e-tests' );
 }
 
-process.env.PORT = 5000;
+process.env.PORT = 5001;
 process.env.SLACK_VERIFICATION_TOKEN = 'abcdef123';
 process.env.DATABASE_URL = 'postgres://postgres@localhost:5432/plusplus_tests';
 process.env.DATABASE_USE_SSL = false;

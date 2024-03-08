@@ -95,5 +95,6 @@ const updateScore = async( item, operation ) => {
 
 module.exports = {
   retrieveTopScores,
-  updateScore
+  updateScore,
+  test_only_postgres: postgres,
 };
